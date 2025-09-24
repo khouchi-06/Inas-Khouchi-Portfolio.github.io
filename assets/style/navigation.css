@@ -3,13 +3,16 @@
   position: fixed;
   top: 20px;
   right: 20px;
-  max-width: 95vw; /* évite de dépasser sur mobile */
+  max-width: 95vw;
+  /* évite de dépasser sur mobile */
   border-radius: 30px;
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(12px);
   display: flex;
-  flex-direction: row; /* ✅ remet dans le bon sens */
-  justify-content: flex-start; /* ✅ commence à gauche */
+  flex-direction: row;
+  /* ✅ remet dans le bon sens */
+  justify-content: flex-start;
+  /* ✅ commence à gauche */
   align-items: center;
   gap: 3px;
   padding: 5px 10px;
@@ -29,11 +32,12 @@
   background: none;
   border: none;
   color: var(--text);
-  font-size: 14px;
+  font-size: 1.5em;
   font-weight: 500;
   cursor: pointer;
   transition: all 0.3s ease;
-  white-space: nowrap; /* ✅ reste sur une seule ligne */
+  white-space: nowrap;
+  /* ✅ reste sur une seule ligne */
 }
 
 .menu-bubble button:hover {
@@ -48,14 +52,18 @@
     padding: 4px 8px;
     gap: 4px;
 
-    overflow-x: auto;      /* ✅ scroll horizontal possible */
+    overflow-x: auto;
+    /* ✅ scroll horizontal possible */
     overflow-y: hidden;
-    scrollbar-width: none; /* cache la barre sur Firefox */
-    justify-content: flex-start; /* ✅ toujours à gauche */
+    scrollbar-width: none;
+    /* cache la barre sur Firefox */
+    justify-content: flex-start;
+    /* ✅ toujours à gauche */
   }
 
   .menu-bubble::-webkit-scrollbar {
-    display: none; /* cache la barre sur Chrome/Safari */
+    display: none;
+    /* cache la barre sur Chrome/Safari */
   }
 
   .menu-bubble button {
@@ -65,22 +73,23 @@
 
 @media (max-width: 480px) {
   .menu-bubble {
-    top: 5px;
-    right: 5px;
+    position: fixed;
+    display: flex;
+    justify-content: center;
     padding: 3px 6px;
-    gap: 4px;
-    max-width: 90vw;
-
-    overflow-x: auto; 
+    gap: auto;
+    position: initial;
+    justify-content: flex-start;
+    overflow-x: auto;
     overflow-y: hidden;
-    justify-content: flex-start; /* ✅ reste aligné à gauche */
   }
-
+  
   .menu-bubble::-webkit-scrollbar {
     display: none;
   }
-
+  
   .menu-bubble button {
+    font-weight: bold;
     font-size: 11px;
   }
 }

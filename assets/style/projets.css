@@ -1,28 +1,34 @@
-.projects {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-}
+
 
 
 .project {
   width: max-content;
-    height: min-content;
-    padding: 10px;
-    padding-bottom: 25px;
-    border-radius: 15px;
-    background-color: rgba(var(--background-rgb), 0.5);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(6px);
-    /* compatibilité Safari */
-    color: var(--text);
-    box-shadow: 0 4px 15px rgba(var(--primary-rgb), 0.8);
+  height: min-content;
+  padding: 10px;
+  padding-bottom: 25px;
+  border-radius: 15px;
+  background-color: rgba(var(--background-rgb), 0.5);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(6px);
+  /* compatibilité Safari */
+  color: var(--text);
+  box-shadow: 0 4px 15px rgba(var(--primary-rgb), 0.8);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* Effet hover */
 .project:hover {
-    transform: translateY(-5px) scale(1.03);
-    box-shadow: 0 8px 25px rgba(var(--accent-rgb), 0.3);
-    backdrop-filter: blur(10px);
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 8px 25px rgba(var(--accent-rgb), 0.3);
+  backdrop-filter: blur(10px);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
 }

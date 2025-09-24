@@ -67,7 +67,7 @@
   }
 
   .menu-bubble button {
-    font-size: 12px;
+    font-size: 1em;
   }
 }
 
@@ -90,6 +90,6 @@
   
   .menu-bubble button {
     font-weight: bold;
-    font-size: 11px;
+    font-size: 1.5em;
   }
 }

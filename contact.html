@@ -7,27 +7,21 @@
     <link rel="stylesheet" href="assets/style/navigation.css">
     <link rel="stylesheet" href="assets/style/contact.css">
     <link rel="stylesheet" href="assets/style/global.css">
-    <link rel="stylesheet" href="assets/style/scroll-snap.css">
     <title>Document</title>
 </head>
-<!-- Bulle flottante -->
-<div class="menu-bubble">
-    <button onclick="window.location.href='index.html'">Accueil</button>
-    <button onclick="window.location.href='a_propos.html'">A propos</button>
-    <button onclick="window.location.href='projet.html'">Projets</button>
-    <button onclick="window.location.href='competences.html'">Competences</button>
-    <button onclick="window.location.href='contact.html'">Contact</button>
-</div>
 
-<body id="scroll-snap" class="body-index">
-
-
-
-    <section>
+<body class="body-index">
+    <section id="header">
+        <div class="menu-bubble">
+            <button onclick="window.location.href='index.html'">Accueil</button>
+            <button onclick="window.location.href='a_propos.html'">A propos</button>
+            <button onclick="window.location.href='projet.html'">Projets</button>
+            <button onclick="window.location.href='competences.html'">Competences</button>
+            <button onclick="window.location.href='contact.html'">Contact</button>
+        </div>
         <h1 id="h1-contact">Apprenons a nous connaitre </h1>
     </section>
-
-    <section id="section-contact">
+    <section>
         <div class="contact">
             <div id="email">
                 <p>inaskhouchi06@gmail.com</p>
@@ -42,13 +36,28 @@
                             d="M4.012 16.737a2.005 2.005 0 0 1 -1.012 -1.737v-10c0 -1.1 .9 -2 2 -2h10c.75 0 1.158 .385 1.5 1" />
                     </svg></i></button>
             </div>
-
+            <div id="num-tel">
+                <p>+33 7 45 18 15 85</p>
+                <button id="copy_Num" onclick="copyNum()"><svg xmlns="http://www.w3.org/2000/svg" width="15"
+                        height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round"
+                        class="icon icon-tabler icons-tabler-outline icon-tabler-copy">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path
+                            d="M7 7m0 2.667a2.667 2.667 0 0 1 2.667 -2.667h8.666a2.667 2.667 0 0 1 2.667 2.667v8.666a2.667 2.667 0 0 1 -2.667 2.667h-8.666a2.667 2.667 0 0 1 -2.667 -2.667z" />
+                        <path
+                            d="M4.012 16.737a2.005 2.005 0 0 1 -1.012 -1.737v-10c0 -1.1 .9 -2 2 -2h10c.75 0 1.158 .385 1.5 1" />
+                    </svg></i></button>
+            </div>
         </div>
     </section>
 
 
 
+
+
     <script src="assets/js/copy_Mail.js"></script>
+    <script src="assets/js/copyNum.js"></script>
     <script src="assets/js/navigation.js"></script>
 </body>
 

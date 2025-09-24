@@ -1,31 +1,59 @@
-
-
-#copy_Mail {
-    all: unset;
-    background-color: rgba(118, 118, 118, 0);
-    backdrop-filter: blur(10px);
-}
-
-#email {
-    display: flex;
-    justify-content: left;
-    text-align: left;
-    gap: 5px;
-    padding: 5px;
-    width: max-content;
-    height: max-content;
-}
-
-.contact {
-    display: flex;
-    justify-content: left;
-    margin: 10px;
-    width: 100%;
-    padding: 100px;
+/* ===== Scroll global ===== */
+html,
+body {
+    font-family: Arial, sans-serif;
+    color: var(--text, #492013);
 }
 
 #h1-contact {
-    text-align: left;
-    margin-left: 10px;
-    padding-top: 50px;
+        margin-bottom: 30px;
+        text-align: left;
+        font-weight: bold;
+        color: var(--accent, #2d5121);
+    }
+
+
+
+@media (max-width:480px) {
+    /* ===== Titre ===== */
+    #h1-contact {
+        margin-top : 100px;
+        margin-bottom: 50px;
+        text-align: left;
+        font-size: 3rem;
+        font-weight: bold;
+        color: var(--accent, #2d5121);
+    }
+}
+
+/* ===== Bloc email ===== */
+.contact {
+    display: grid;
+    grid : ;
+    gap: 10px;
+}
+
+#email, #num-tel {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#email p, #num-tel p {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+#copy_Mail, #copy_Num {
+    all: unset;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 6px;
+    background-color: rgba(0, 0, 0, 0.05);
+    transition: background 0.2s;
+}
+
+#copy_Mail:hover {
+    background-color: rgba(0, 0, 0, 0.15);
 }

@@ -1,0 +1,24 @@
+@font-face {
+    font-family: "spintura";
+    src: url("../font/sprintura-demo/Sprintura\ Demo.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+#filtre {
+    margin-bottom: 20px;
+    background-color: rgb(var(--background-rgb), 0.8);
+    color: var(--text);
+    font-family: "Milker", sans-serif;
+    border: 1px solid var(--primary);
+    border-radius: 3px;
+    padding: 5px 2px;
+}
+
+.filter select {
+    display: none;
+    font-size: 5rem;
+    font-family: "Milker", sans-serif;
+    padding: 10px 10px;
+}
+

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/style/global.css">
+    <link rel="stylesheet" href="/assets/style/filtre.css">
+    <link rel="stylesheet" href="/assets/style/navigation.css">
+    <link rel="stylesheet" href="/assets/style/projets.css">
+    <title>PROJETS</title>
+</head>
+
+<body class="projet-body">
+    <div class="menu-bubble">
+        <button onclick="window.location.href='index.html'">Accueil</button>
+        <button onclick="window.location.href='a_propos.html'">A propos</button>
+        <button onclick="window.location.href='projet.html'">Projets</button>
+        <button onclick="window.location.href='competences.html'">Competences</button>
+        <button onclick="window.location.href='contact.html'">Contact</button>
+    </div>
+
+    <h1>Mes PROJETS</h1>
+    <!--Filtre-->
+    <label for="filtre">Discipline:</label>
+    <select name="filtre" id="filtre">
+        <option data-filter="tous">Tous</option>
+        <option data-filter="dev">Develepoment</option>
+        <option data-filter="theatre">Theatre</option>
+        <option data-filter="robotique">Robotique</option>
+        <option data-filter="reseau">Reseau</option>
+    </select>
+
+    <!-- Liste des projets -->
+    <div class="projects">
+        <div class="project" data-category="Develepoment" data-date="2024">
+            <h4>Site vitrine</h4>
+
+            <p>Dans ce projet, nous avons travaillé comme en situation réelle avec un client afin de définir les
+                attentes pour la création d’un site web dédié à une décennie (années 60 à 2010). Mon rôle a consisté à
+                concevoir un questionnaire d’entretien, conduire l’interview, analyser les réponses et proposer une
+                première maquette accompagnée d’une présentation orale.</p>
+
+            <h5>Compétences développées</h5>
+
+            <ul>
+                <li>Recueil et analyse des besoins clients</li>
+                <li>Communication et présentation professionnelle</li>
+                <li>Travail en équipe et gestion de projet</li>
+                <li>Conception de maquette et sélection d’outils adaptés</li>
+            </ul>
+
+        </div>
+        <div class="project" data-category="Robotique" data-date="2023">
+            <h4>Robot Cleanamax</h4>
+            <section>
+                <h5>Projet Robotique – Hackathon & Bac de Terminale</h5>
+                <p>J’ai eu l’opportunité de travailler sur la conception et la réalisation d’un robot à deux reprises :
+                    une première fois lors d’un hackathon, puis dans le cadre de mon projet de spécialité en terminale.
+                    <br><br>
+                    Lors du hackathon, je me suis concentré sur la <strong>modélisation 3D</strong> des pièces du robot,
+                    en collaboration avec l’équipe. Pour le projet de terminale, j’ai élargi mes responsabilités :
+                    <strong>programmation du robot</strong>, choix des matériaux, conception de diagrammes (systèmes,
+                    cas d’utilisation, algorithmes), ainsi que la <strong>gestion complète du projet</strong>.
+                    <br><br>
+                    Nous avons mené deux soutenances : la première pour défendre notre idée et obtenir un budget, et la
+                    seconde pour présenter le robot finalisé. Cette expérience m’a appris à mener un projet technique de
+                    bout en bout, en combinant rigueur, créativité et esprit d’équipe.
+                </p>
+
+                <h5>Compétences mises en avant</h5>
+                <ul>
+                    <li>Modélisation 3D et conception mécanique</li>
+                    <li>Programmation et intégration de systèmes embarqués</li>
+                    <li>Gestion de projet (planification, choix techniques, coordination)</li>
+                    <li>Rédaction de diagrammes et algorithmes</li>
+                    <li>Communication et soutenance orale</li>
+                    <li>Travail collaboratif et résolution de problèmes techniques</li>
+                </ul>
+            </section>
+
+            <p></p>
+        </div>
+        <div class="project" data-category="theatre" data-date="2022">
+            <h4>Piece de theatre amateur</h4>
+            <section>
+                <p>Pendant trois ans, j’ai participé à une troupe de théâtre amateur encadrée par un metteur en scène
+                    professionnel. Ce projet m’a confronté à la rigueur des répétitions, à la mémorisation de textes, au
+                    travail d’interprétation et à la gestion de la scène devant un public.
+                    Au-delà de l’aspect artistique, cette expérience m’a appris à gérer le trac, à collaborer avec des
+                    profils variés et à m’exprimer de manière claire et impactante, autant dans un cadre créatif que
+                    dans une situation de communication professionnelle.</p>
+
+                <h5>Compétences mises en avant</h5>
+                <ul>
+                    <li>Prise de parole en public et aisance orale</li>
+                    <li>Confiance en soi et gestion du stress</li>
+                    <li>Travail d’équipe et coordination</li>
+                    <li>Créativité, expression artistique et interprétation</li>
+                    <li>Rigueur, discipline et respect des délais</li>
+                    <li>Capacité à capter et maintenir l’attention d’un auditoire</li>
+                </ul>
+            </section>
+
+            <p></p>
+        </div>
+        <div class="project" data-category="Reseau" data-date="2025">
+            <h4>Configuration Linux Bash</h4>
+            <section>
+                <h5>Projet SAE 1.03 – Introduction au Système d’Exploitation</h5>
+                <p>Ce projet, réalisé en binôme, avait pour objectif de concevoir une série de scripts afin de collecter
+                    et analyser les connexions des utilisateurs sur un système.
+                    <br><br>
+                    Nous avons développé plusieurs scripts Bash permettant :
+                    l’ajout automatique d’entrées dans un fichier de logs (<em>connexion.log</em>),
+                    la génération de statistiques journalières et mensuelles par utilisateur (nombre de connexions,
+                    heures, machines et adresses IP utilisées),
+                    ainsi que la création de rapports détaillés exportés vers des fichiers.
+                    <br><br>
+                    Le projet s’est conclu par une soutenance, où nous avons présenté et testé nos scripts sur
+                    différentes configurations, garantissant leur robustesse et leur fiabilité.
+                </p>
+
+                <h5>Compétences mises en avant</h5>
+                <ul>
+                    <li>Programmation de scripts Bash sous Linux</li>
+                    <li>Gestion et exploitation de fichiers logs</li>
+                    <li>Analyse et traitement automatisé de données</li>
+                    <li>Utilisation de paramètres et menus interactifs dans les scripts</li>
+                    <li>Travail en binôme et gestion des responsabilités</li>
+                    <li>Présentation et démonstration technique en soutenance</li>
+                </ul>
+            </section>
+
+            <p></p>
+        </div>
+    </div>
+
+
+    <script src="assets/js/filtre_projet.js"></script>
+    <script src="assets/js/navigation.js"></script>
+</body>
+
+</html>

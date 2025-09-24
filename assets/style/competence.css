@@ -1,0 +1,37 @@
+h2 {
+  color: var(--accent);
+}
+
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* ✅ 2 colonnes sur grand écran */
+  gap: 20px; 
+  padding: 20px;
+}
+
+.skill {
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill:hover {
+  transform: translateY(1px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.skill h2 {
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+}
+
+.skill p {
+  font-size: 1rem;
+}
+
+/* --- ✅ RESPONSIVE --- */
+@media (max-width: 768px) {
+  .skills-container {
+    grid-template-columns: 1fr; /* ✅ une seule colonne */
+  }
+}

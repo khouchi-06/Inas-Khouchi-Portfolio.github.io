@@ -1,0 +1,16 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  scroll-behavior: smooth;      /* défilement fluide */
+  scroll-snap-type: y mandatory; /* verrouille le scroll vertical */
+  overflow-y: scroll;
+}
+
+section {
+  height: 100vh;               /* chaque section prend tout l'écran */
+  scroll-snap-align: start;    /* s'aligne au début de la section */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}

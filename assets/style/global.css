@@ -42,20 +42,20 @@ body {
 
 /* === FONDS PAR PAGE === */
 .body-index {
+    background-attachment: fixed;
     background-image: url(../img/bg-desert.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
 }
 
 .competence-body,
 .projet-body {
+    background-attachment: fixed;
     background-image: url(../img/montagne.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
 }
 
 /* === TITRES === */

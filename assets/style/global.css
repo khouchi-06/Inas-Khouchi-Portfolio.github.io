@@ -10,6 +10,8 @@
     --primary-rgb: 119, 32, 22;
     --secondary-rgb: 181, 104, 36;
     --accent-rgb: 45, 81, 33;
+
+    --mobile: 768px;
 }
 
 ::-webkit-scrollbar {
@@ -125,7 +127,7 @@ li {
 }
 
 /* Mobile */
-@media (max-width: 768px) {
+@media (max-width: var(--mobile)) {
     h1 {
         font-size: 3em;
     }

@@ -30,7 +30,7 @@ h2 {
 }
 
 /* --- ✅ RESPONSIVE --- */
-@media (max-width: 768px) {
+@media (max-width: var(--mobile)) {
   .skills-container {
     grid-template-columns: 1fr; /* ✅ une seule colonne */
   }

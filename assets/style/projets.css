@@ -25,7 +25,7 @@
 }
 
 /* Mobile */
-@media (max-width: var(--mobile)) {
+@media (max-width: 768px) {
   .projects {
     grid-template-columns: 1fr; /* une seule colonne */
   }
